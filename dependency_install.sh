@@ -4,6 +4,8 @@
 #Designation: DevOps Engineer
 set -x 
 cd /tmp/
+yum erase -y google-chrome-stable || true
+rm -rf /opt/google/chrome || true
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
 yum localinstall google-chrome-stable_current_x86_64.rpm
 rm google-chrome-stable_current_x86_64.rpm
